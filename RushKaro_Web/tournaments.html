@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RushKaro Tournaments</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #1f0036, #3a0057, #1f0036);
+      background-size: 600% 600%;
+      animation: rainbowBg 10s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes rainbowBg {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #ff66ff;
+      text-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 15px;
+      box-shadow: 0 0 30px #00f0ff;
+      padding: 30px;
+      margin-bottom: 40px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .title {
+      font-size: 28px;
+      color: #00ffe1;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px #00ffe1;
+    }
+
+    .details {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .rules {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 16px;
+      color: #ddd;
+      text-align: left;
+    }
+
+    .btn-glow {
+      display: inline-block;
+      padding: 12px 30px;
+      margin: 10px 10px 0;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 40px;
+      color: #fff;
+      background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc);
+      background-size: 300%;
+      box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+      animation: glowBtn 4s linear infinite;
+      transition: transform 0.2s ease;
+    }
+
+    .btn-glow:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes glowBtn {
+      0% {background-position: 0%;}
+      50% {background-position: 100%;}
+      100% {background-position: 0%;}
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 34px; }
+      .title { font-size: 22px; }
+      .details { font-size: 16px; }
+    }
+  </style>
+</head>
+<body><!-- 🌐 Premium RGB Animated Navigation Bar with Stylish Mobile Menu -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">RushKaro</div>
+    <div class="menu-toggle" onclick="toggleSidebar()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="privacy-policy.html">🔐 Privacy Policy</a></li>
+      <li><a href="announcement.html">📢 Announcements</a></li>
+      <li><a href="tournaments.html">🎮 Tournaments</a></li>
+      <li><a href="fair-support.html">📜 Fair & Support</a></li>
+      <li><a href="about.html">ℹ️ About Us</a></li>
+      <li><a href="join-team.html">🚀 Join Our Team</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="toggleSidebar()">×</div>
+  <a href="index.html">🏠 Home</a>
+  <a href="privacy-policy.html">🔐 Privacy Policy</a>
+  <a href="announcement.html">📢 Announcements</a>
+  <a href="tournaments.html">🎮 Tournaments</a>
+  <a href="fair-support.html">📜 Fair & Support</a>
+  <a href="about.html">ℹ️ About Us</a>
+  <a href="join-team.html">🚀 Join Our Team</a>
+</div>
+
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', sans-serif; }
+
+  .navbar {
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    padding: 14px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 0 18px #00ffff80;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 12px #00ffff99;
+  }
+
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .bar {
+    height: 3px;
+    width: 25px;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #00ffffaa;
+    animation: barGlow 2s infinite alternate;
+  }
+
+  @keyframes barGlow {
+    from { box-shadow: 0 0 5px #00ffffaa; }
+    to { box-shadow: 0 0 15px #ff00ffcc; }
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .nav-links li a:hover {
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    color: #000;
+    box-shadow: 0 0 18px #00ffff99;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background: #121212;
+    box-shadow: 0 0 25px #00ffff88;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .sidebar a {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background 0.2s;
+  }
+  .sidebar a:hover {
+    background: #1e1e1e;
+  }
+
+  .close-btn {
+    align-self: flex-end;
+    font-size: 26px;
+    color: #ff00ff;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+    .nav-links {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.style.left = sidebar.style.left === "0px" ? "-100%" : "0px";
+  }
+</script>
+
+  <div class="container">
+    <h1>🎮 RushKaro Tournaments</h1>
+
+    <div class="card">
+      <div class="title">🔥 Squad Tournament</div>
+      <div class="details">
+        Entry: ₹20 | Per Kill: ₹10<br>
+        Prize: ₹400 | Slots: 12/12<br>
+        Match Time: Today, 7:00 PM
+      </div>
+      <a class="btn-glow" href="https://rushkaro.fun">Join via App</a>
+      <a class="btn-glow" href="https://chat.whatsapp.com/Hrk3guLQIn79lwvDeHKHuX">Join WhatsApp</a>
+      <div class="rules">
+        <strong>📋 Rules:</strong><br>
+        - No Emulator, No Hack<br>
+        - Custom Room Only<br>
+        - Match ID 10 mins before<br>
+        - Respect teammates & opponents
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="title">⚡ Solo Match</div>
+      <div class="details">
+        Entry: ₹10 | Per Kill: ₹5<br>
+        Prize: ₹100 | Slots: 48/48<br>
+        Match Time: Today, 9:00 PM
+      </div>
+      <a class="btn-glow" href="https://rushkaro.fun">Join via App</a>
+      <a class="btn-glow" href="https://chat.whatsapp.com/Hrk3guLQIn79lwvDeHKHuX">Join WhatsApp</a>
+      <div class="rules">
+        <strong>📋 Rules:</strong><br>
+        - Solo Classic Match<br>
+        - Screen record recommended<br>
+        - No abusive behaviour<br>
+        - Follow instructions in group
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy - RushKaro</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #0d0d0d, #1a0033, #0d0d0d);
+      background-size: 600% 600%;
+      animation: animatedBg 15s ease infinite;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    @keyframes animatedBg {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 60px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px #00ffff88, 0 0 40px #ff00ff55;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1, h2 {
+      color: #00ffe1;
+      text-shadow: 0 0 10px #00ffe1, 0 0 20px #ff00ff;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a {
+      color: #00e6e6;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .glow-line {
+      height: 2px;
+      background: linear-gradient(90deg, #00ffff, #ff00ff, #00ffcc);
+      background-size: 300% 300%;
+      animation: lineGlow 6s linear infinite;
+      margin: 30px 0;
+      border-radius: 10px;
+    }
+
+    @keyframes lineGlow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body><!-- 🌐 Premium RGB Animated Navigation Bar with Stylish Mobile Menu -->
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="logo">RushKaro</div>
+    <div class="menu-toggle" onclick="toggleSidebar()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="privacy-policy.html">🔐 Privacy Policy</a></li>
+      <li><a href="announcement.html">📢 Announcements</a></li>
+      <li><a href="tournaments.html">🎮 Tournaments</a></li>
+      <li><a href="fair-support.html">📜 Fair & Support</a></li>
+      <li><a href="about.html">ℹ️ About Us</a></li>
+      <li><a href="join-team.html">🚀 Join Our Team</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="sidebar" id="sidebar">
+  <div class="close-btn" onclick="toggleSidebar()">×</div>
+  <a href="index.html">🏠 Home</a>
+  <a href="privacy-policy.html">🔐 Privacy Policy</a>
+  <a href="announcement.html">📢 Announcements</a>
+  <a href="tournaments.html">🎮 Tournaments</a>
+  <a href="fair-support.html">📜 Fair & Support</a>
+  <a href="about.html">ℹ️ About Us</a>
+  <a href="join-team.html">🚀 Join Our Team</a>
+</div>
+
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Segoe UI', sans-serif; }
+
+  .navbar {
+    background: linear-gradient(90deg, #0f0c29, #302b63, #24243e);
+    padding: 14px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 0 18px #00ffff80;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .logo {
+    font-size: 26px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 12px #00ffff99;
+  }
+
+  .menu-toggle {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .bar {
+    height: 3px;
+    width: 25px;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    border-radius: 3px;
+    box-shadow: 0 0 10px #00ffffaa;
+    animation: barGlow 2s infinite alternate;
+  }
+
+  @keyframes barGlow {
+    from { box-shadow: 0 0 5px #00ffffaa; }
+    to { box-shadow: 0 0 15px #ff00ffcc; }
+  }
+
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  .nav-links li a:hover {
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    color: #000;
+    box-shadow: 0 0 18px #00ffff99;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background: #121212;
+    box-shadow: 0 0 25px #00ffff88;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .sidebar a {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 10px;
+    transition: background 0.2s;
+  }
+  .sidebar a:hover {
+    background: #1e1e1e;
+  }
+
+  .close-btn {
+    align-self: flex-end;
+    font-size: 26px;
+    color: #ff00ff;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+    .nav-links {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    sidebar.style.left = sidebar.style.left === "0px" ? "-100%" : "0px";
+  }
+</script>
+
+  <div class="container">
+    <h1>🌐 Privacy Policy</h1>
+
+    <p><strong>Effective Date:</strong> June 27, 2025</p>
+
+    <p>This Privacy Policy describes how <strong>RushKaro</strong> ("we", "us", or "our") collects, uses, and protects your personal information when you use our website (<a href="https://www.rushkaro.fun">rushkaro.fun</a>) or mobile application.</p>
+
+    <div class="glow-line"></div>
+
+    <h2>1. Information We Collect</h2>
+    <ul>
+      <li><strong>Personal Info:</strong> Name, Email, Mobile, Game ID, UPI, etc.</li>
+      <li><strong>Device Info:</strong> Model, OS, IP, device ID, etc.</li>
+      <li><strong>Usage:</strong> Matches played, rewards claimed, etc.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>For tournament participation & user identification</li>
+      <li>To process payments, rewards, and referrals</li>
+      <li>To send updates and important notifications</li>
+      <li>To prevent fraud & enhance gameplay experience</li>
+    </ul>
+
+    <h2>3. Sharing of Data</h2>
+    <p>We never sell or rent your data. We only share with verified services like:</p>
+    <ul>
+      <li>UPI Payment Processors</li>
+      <li>Email/WhatsApp notification providers</li>
+    </ul>
+
+    <h2>4. Data Security</h2>
+    <p>We use SSL encryption, secure databases, and access control to protect user data. Users are advised not to share passwords or OTPs with anyone.</p>
+
+    <h2>5. User Rights</h2>
+    <ul>
+      <li>Request access or deletion of your data</li>
+      <li>Correct inaccurate information</li>
+      <li>Delete your account anytime via support</li>
+    </ul>
+
+    <h2>6. Children’s Privacy</h2>
+    <p>RushKaro is not for users under 13. If you're under 13, use only under guardian supervision.</p>
+
+    <h2>7. Cookies & Tracking</h2>
+    <p>Cookies may be used for session management, analytics, or preferences. You can disable them in browser settings.</p>
+
+    <div class="glow-line"></div>
+
+    <h2>8. Updates to This Policy</h2>
+    <p>We may update our privacy practices. All users will be informed of major changes via app or website notice.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have questions, contact us at:</p>
+    <p>
+      📧 <a href="mailto:support@rushkaro.fun">support@rushkaro.fun</a><br>
+      💬 <a href="https://chat.whatsapp.com/Hrk3guLQIn79lwvDeHKHuX">WhatsApp Support Group</a>
+    </p>
+
+    <footer>
+      &copy; 2025 RushKaro eSports | All Rights Reserved.
+    </footer>
+  </div>
+</body>
+</html>
